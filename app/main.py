@@ -8,6 +8,7 @@ BASE_URL = "https://api.weatherapi.com/v1/current.json"
 FILTERING = "Paris"
 API_KEY = os.getenv("API_KEY")
 
+
 def get_weather() -> None:
     params = {"key": API_KEY, "q": FILTERING}
     response = requests.get(BASE_URL, params=params)
