@@ -17,7 +17,7 @@ def get_weather() -> None:
     print(
         f"{data['location']['name']}: {data['location']['country']}\n \
             Local time: {data['location']['localtime']}\n \
-                Temperature: {data['location']['temp_c']} Celsium\n \
+                Temperature: {data['current']['temp_c']} Celsium\n \
                     Wind speed: {data['current']['wind_kph']} km / h"
     )
 
